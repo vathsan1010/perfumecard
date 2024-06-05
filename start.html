@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root{
+            --Dark:hsl(158, 36%, 37%);
+            --Cream:hsl(30, 38%, 92%);
+            --dark_blue:hsl(212, 21%, 14%);
+            --grayish_blue:hsl(228, 12%, 48%);
+            --White: hsl(0, 0%, 100%);
+        }
+        body{
+            background-color: var(--Cream);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: 250px;
+            margin-bottom: 200px;
+            margin-top: 100px;
+        }
+        .s1 img{
+            width: 250px;
+            height: 400px;
+            margin-left: 5px;
+        }
+        .container2{
+            display: grid;
+            height: 400px;
+            width: 300px;
+            margin-right: 500px;
+            background-color: var(--White);
+            padding-left: 30px;
+        }
+        .s2{
+            padding-right: 30px;
+        }
+        .s2 h3{
+            color: var(--grayish_blue);
+            text-transform: uppercase;
+        }
+        .s2 p{
+            margin-top: 5px;
+            color: var(--grayish_blue);
+        }
+        .s3{
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+        .s3 h3{
+            position: absolute;
+            right: 300px;
+            top: 360px;
+            color: var(--grayish_blue);
+        }
+        .s3 button{
+        padding: 10px 80px 10px 80px;
+        border-radius: 10px;
+        background-color: var(--Dark);
+        color: var(--White);
+        cursor: pointer;
+        }
+        .s3 h1{
+            color: var(--Dark);
+        }
+        @media (max-width: 345px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin: 50px auto;
+            }
+            .s1 img {
+                width: 100%;
+                height: auto;
+            }
+            .container2 {
+                width: 100%;
+                padding: 20px;
+            }
+            .s3 button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="s1">
+            <img src="image.jpg">
+        </div>
+        <div class="container2">
+            <div class="s2">
+                  <h3>Perfume</h3>
+                  <h1>Gabrielle Essence Eau De Parfum</h1>
+                  <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.</p>
+            </div>
+            <div class="s3">
+                <h1> $149.99</h1>
+                <h3><s> $169.99</s></h3>
+                <button class="btn"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+        </div>
+       
+        
+    
+</body>
+</html>
